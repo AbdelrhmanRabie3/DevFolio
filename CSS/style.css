@@ -1,0 +1,736 @@
+/* Start global */
+:root {
+  --main-color: #0078ff;
+  --p-color: #4e4e4e;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 3.625rem;
+  position: relative;
+}
+.text-p-color {
+  color: var(--p-color);
+}
+.fw-600 {
+  font-weight: 600;
+}
+.fs-48 {
+  font-size: 3rem;
+}
+.fs-32 {
+  font-size: 2rem;
+}
+header h2 {
+  position: relative;
+}
+header h2::after {
+  content: "";
+  height: 5px;
+  width: 40px;
+  background-color: var(--main-color);
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.card-shadow {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.text-main {
+  color: var(--main-color);
+}
+.w-85 {
+  width: 85%;
+}
+.w-90 {
+  width: 90%;
+}
+a {
+  text-decoration: none;
+}
+.layer {
+  background-color: rgba(0, 119, 255, 0.7);
+}
+/* End global */
+/* Start NavBar */
+.navbar .dropdown:hover > .dropdown-menu {
+  display: block;
+}
+.dropdown-hover a {
+  transition: color 0.4s;
+}
+.dropdown-hover a:hover {
+  color: var(--main-color);
+  background-color: white;
+}
+.navbar-brand {
+  font-weight: 600;
+  line-height: 2.125rem;
+  font-size: 1.75rem;
+}
+.nav-link:focus,
+.nav-link:hover {
+  color: var(--main-color);
+}
+.navbar-nav .nav-link.active {
+  color: var(--main-color);
+}
+.dropdown-menu .dropdown-item a {
+  color: #4e4e4e !important;
+}
+.navbar-collapse {
+  background-color: white;
+  padding: 20px;
+}
+.nav-link a {
+  color: #4e4e4e;
+}
+/* End NavBar */
+
+/* Start Header */
+.section-header {
+  background-image: url(../images/hero-bg.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  position: relative;
+}
+header .header-layer {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+h1::after {
+  content: "|";
+  position: absolute;
+  bottom: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2.5rem;
+  animation: Typing 20s infinite;
+  z-index: 10;
+}
+@keyframes Typing {
+  0% {
+    content: "|";
+  }
+  .8% {
+    content: "D|";
+  }
+  1.6% {
+    content: "De|";
+  }
+  2.4% {
+    content: "Des|";
+  }
+  3.2% {
+    content: "Desi|";
+  }
+  4% {
+    content: "Desig|";
+  }
+  4.8% {
+    content: "Design|";
+  }
+  5.6% {
+    content: "Designe|";
+  }
+  6.4% {
+    content: "Designer|";
+  }
+  7.2% {
+    content: "Designer";
+  }
+  8% {
+    content: "Designer|";
+  }
+  8.8% {
+    content: "Designer";
+  }
+  9.6% {
+    content: "Designer|";
+  }
+  10.4% {
+    content: "Designer";
+  }
+  11.2% {
+    content: "Designer|";
+  }
+  12% {
+    content: "Designe|";
+  }
+  12.8% {
+    content: "Design|";
+  }
+  13.6% {
+    content: "Desig|";
+  }
+  14.4% {
+    content: "Desi|";
+  }
+  15.2% {
+    content: "Des|";
+  }
+  16% {
+    content: "De|";
+  }
+  16.8% {
+    content: "Dev|";
+  }
+  17.6% {
+    content: "Deve|";
+  }
+  18.4% {
+    content: "Devel|";
+  }
+  19.2% {
+    content: "Develo|";
+  }
+  20% {
+    content: "Develop|";
+  }
+  21.8% {
+    content: "Develope|";
+  }
+  22.6% {
+    content: "Developer|";
+  }
+  23.4% {
+    content: "Developer";
+  }
+  24.2% {
+    content: "Developer|";
+  }
+  25% {
+    content: "Developer";
+  }
+  25.8% {
+    content: "Developer|";
+  }
+  26.6% {
+    content: "Developer";
+  }
+  27.4% {
+    content: "Developer|";
+  }
+  28.2% {
+    content: "Develope|";
+  }
+  29% {
+    content: "Develop|";
+  }
+  29.8% {
+    content: "Develo|";
+  }
+  30.6% {
+    content: "Devel|";
+  }
+  31.4% {
+    content: "Deve|";
+  }
+  32.2% {
+    content: "Dev|";
+  }
+  33% {
+    content: "De|";
+  }
+  33.8% {
+    content: "D|";
+  }
+  34.6% {
+    content: "|";
+  }
+  35.4% {
+    content: "";
+  }
+  36.2% {
+    content: "|";
+  }
+  37% {
+    content: "";
+  }
+  37.8% {
+    content: "|";
+  }
+  38.6% {
+    content: "F|";
+  }
+  39.4% {
+    content: "Fr|";
+  }
+  40.2% {
+    content: "Fre|";
+  }
+  41% {
+    content: "Free|";
+  }
+  41.8% {
+    content: "Freel|";
+  }
+  42.6% {
+    content: "Freela|";
+  }
+  43.4% {
+    content: "Freelan|";
+  }
+  44.2% {
+    content: "Freelanc|";
+  }
+  45% {
+    content: "Freelance|";
+  }
+  45.8% {
+    content: "Freelancer|";
+  }
+  46.6% {
+    content: "Freelancer";
+  }
+  47.4% {
+    content: "Freelancer|";
+  }
+  48.2% {
+    content: "Freelancer";
+  }
+  49% {
+    content: "Freelancer|";
+  }
+  49.8% {
+    content: "Freelancer";
+  }
+  50.6% {
+    content: "Freelancer|";
+  }
+  51.4% {
+    content: "Freelance|";
+  }
+  52.2% {
+    content: "Freelanc|";
+  }
+  53% {
+    content: "Freelan|";
+  }
+  53.8% {
+    content: "Freela|";
+  }
+  54.6% {
+    content: "Freel|";
+  }
+  55.4% {
+    content: "Free|";
+  }
+  56.2% {
+    content: "Fre|";
+  }
+  57% {
+    content: "Fr|";
+  }
+  57.8% {
+    content: "F|";
+  }
+  58.6% {
+    content: "|";
+  }
+  59.4% {
+    content: "";
+  }
+  60.2% {
+    content: "|";
+  }
+  61% {
+    content: "";
+  }
+  61.8% {
+    content: "|";
+  }
+  62.6% {
+    content: "";
+  }
+  63.4% {
+    content: "|";
+  }
+  64.2% {
+    content: "P|";
+  }
+  65% {
+    content: "Ph|";
+  }
+  65.8% {
+    content: "Pho|";
+  }
+  66.6% {
+    content: "Phot|";
+  }
+  67.4% {
+    content: "Photo|";
+  }
+  68.2% {
+    content: "Photog|";
+  }
+  69% {
+    content: "Photogr|";
+  }
+  70.8% {
+    content: "Photogra|";
+  }
+  71.6% {
+    content: "Photograp|";
+  }
+  72.4% {
+    content: "Photograph|";
+  }
+  73.2% {
+    content: "Photographe|";
+  }
+  74% {
+    content: "Photographer|";
+  }
+  74.8% {
+    content: "Photographer";
+  }
+  75.6% {
+    content: "Photographer|";
+  }
+  76.4% {
+    content: "Photographer";
+  }
+  77.2% {
+    content: "Photographer|";
+  }
+  78% {
+    content: "Photographer";
+  }
+  78.8% {
+    content: "Photographer|";
+  }
+  79.6% {
+    content: "Photographe|";
+  }
+  80.4% {
+    content: "Photograph|";
+  }
+  81.2% {
+    content: "Photograp|";
+  }
+  82% {
+    content: "Photogra|";
+  }
+  82.8% {
+    content: "Photogr|";
+  }
+  83.6% {
+    content: "Photog|";
+  }
+  84.4% {
+    content: "Photo|";
+  }
+  85.2% {
+    content: "Phot|";
+  }
+  86% {
+    content: "Pho|";
+  }
+  86.8% {
+    content: "Ph|";
+  }
+  87.6% {
+    content: "P|";
+  }
+  88.4% {
+    content: "|";
+  }
+  89.2% {
+    content: "";
+  }
+  90% {
+    content: "|";
+  }
+  90.8% {
+    content: "";
+  }
+  91.6% {
+    content: "|";
+  }
+  92.4% {
+    content: "";
+  }
+  100% {
+    content: "|";
+  }
+}
+/* End Header */
+
+/* Start About */
+.about .row-shadow {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.progress {
+  background-color: #cde1f8;
+  height: 0.75rem;
+}
+.about h2 {
+  position: relative;
+}
+.about h2::after {
+  content: "";
+  width: 100px;
+  height: 3px;
+  background-color: var(--main-color);
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+}
+/* End About */
+
+/* Start Services */
+.services-icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 0 10px var(--main-color);
+  transition: all 0.5s;
+}
+.services-icon i {
+  font-size: 2rem;
+}
+.services .card:hover .services-icon {
+  box-shadow: 0 0 0 10px #cde1f8;
+  background-color: var(--main-color);
+  color: white;
+}
+/* End Services */
+
+/* Start Counter */
+.counter {
+  background-image: url(../images/counters-bg.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+.counter-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 10px solid #cde1f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* End Counter */
+
+/* Start portofolio */
+.portofolio-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 3px solid var(--main-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0078ff;
+  cursor: pointer;
+}
+.portofolio h3 {
+  font-size: 1.1875rem;
+  color: #1e1e1e;
+  line-height: 1.4375rem;
+  font-weight: 500;
+}
+.portofolio p,
+span {
+  font-size: 1rem;
+  line-height: 1.1875rem;
+  font-weight: 400;
+}
+.portofolio .card-image {
+  overflow: hidden;
+}
+.portofolio .card:hover img {
+  transform: scale(1.3);
+}
+.portofolio .card-image img {
+  transition: all 1s;
+}
+.modal-content {
+  background-color: transparent;
+  border: none;
+}
+/* End portofolio */
+
+/* Start testimonial */
+.testimonial {
+  background-image: url(../images/overlay-bg.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+.testimonial .imag-container {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 12px !important;
+  height: 12px;
+  border-radius: 50%;
+}
+/* End testimonial */
+
+/* Start Blog */
+.blog {
+  background-color: #f5f5f5;
+}
+.footer-image {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+.blog .card h5 {
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.blog .card h5:hover {
+  color: var(--main-color);
+}
+.blog .card .card-footer a {
+  transition: all 0.5s;
+}
+.blog .card .card-footer a:hover {
+  color: var(--main-color);
+}
+.blog .card .card-body {
+  position: relative;
+}
+.label {
+  width: fit-content;
+  background-color: var(--main-color);
+  padding: 5px 15px;
+  border-radius: 5px;
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.label span {
+  color: #fff;
+  font-size: 0.6875rem;
+  line-height: 0.8125rem;
+  font-weight: 500;
+}
+/* End Blog */
+
+/* Start Contact */
+.Contact-us {
+  background-image: url(../images/overlay-bg.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+.Contact-us h2 {
+  position: relative;
+}
+.Contact-us h2::after {
+  content: "";
+  width: 100px;
+  height: 3px;
+  background-color: var(--main-color);
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+}
+.btn-submit {
+  background-color: var(--main-color);
+  color: white;
+  padding: 10px 24px;
+  font-size: 1.1875rem;
+  line-height: 1.8125rem;
+  border: none;
+  transition: all 0.5s;
+}
+.btn-submit:hover {
+  background-color: #3393ff;
+  box-shadow: 0 0 0 5px #cde1f8;
+}
+.Contact-us ul {
+  list-style: none;
+}
+.Contact-us li {
+  line-height: 2rem;
+  color: #4e4e4e;
+}
+.contact-us-item {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 4px solid var(--main-color);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: center;
+  transition: all 0.5s;
+}
+.contact-us-item:hover {
+  border: 4px solid #cde1f8;
+  background-color: var(--main-color);
+  color: white;
+}
+/* End Contact */
+/* Start Footer */
+footer {
+  background-color: #0062d3;
+}
+/* End Footer */
+/* ************************************************************************************************************ */
+@media screen and (min-width: 992px) {
+  .navbar .dropend:hover > .dropdown-menu {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 100%;
+  }
+  h1 {
+    font-size: 4.5rem;
+    font-weight: 600;
+    line-height: 5.375rem;
+  }
+  .navbar-collapse {
+    background-color: transparent;
+    height: auto;
+  }
+  .nav-item> a {
+    color: #fff !important;
+  }
+  .nav-link {
+    position: relative;
+  }
+  .nav-link::before {
+    content: "";
+    background-color: white;
+    width: 0;
+    height: 1px;
+    position: absolute;
+    bottom: -2px;
+    left: 5px;
+    transition: width .5s;
+  }
+  .nav-link:hover::before
+  {
+    width: 90%;
+  }
+ .navbar .nav-item {
+    margin-left: 10px;
+  }
+  .navbar-nav .nav-link.active {
+    /* color: white; */
+    border-bottom:solid 3px white !important;
+  }
+  
+}
